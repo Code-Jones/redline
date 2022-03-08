@@ -1,0 +1,55 @@
+html {
+    scroll-behavior: smooth;
+}
+
+#behind-parallax {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../assets/img/glass.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-position: 50% 50%;
+    background-color: black;
+}
+
+#parallax {
+    /*background-color: black;*/
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background-image:
+            url('../assets/img/depth-3.png'),
+            url('../assets/img/depth-2.png'),
+            url('../assets/img/g-logo-removebg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: 50% 50%;
+}
+
+#myCarousel img {
+    width: 100%;
+    max-height: 80vh;
+    height: min-content;
+    object-fit: cover;
+}
+
+
+
+@media only screen and (max-width: 425px) {
+    [small-screen-hidden-sm] {
+        display: none;
+    }
+    [small-screen-visible-sm] {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    [small-screen-hidden-md] {
+        display: none;
+    }
+    [small-screen-visible-md] {
+        display: block;
+    }
+}
